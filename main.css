@@ -1,0 +1,230 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Plus Jakarta Sans", "Arial", sans-serif;
+}
+.header {
+  padding: 25px 0;
+  border-bottom: 1px solid rgb(238, 238, 244);
+  background: rgb(255, 255, 255);
+}
+.container {
+  max-width: 1256px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.header__nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__wrapper {
+  display: flex;
+  align-items: center;
+}
+.heder__list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 30px;
+  margin-left: 50px;
+}
+.header__link {
+  color: #101010;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 150%;
+  text-decoration: none;
+}
+.header__link:hover {
+  color: #1aab7b;
+  transition: 0.4s ease-in-out;
+}
+.header__btn {
+  width: 160px;
+  border-radius: 6px;
+  background-color: #101010;
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 120%;
+  padding: 15px 0;
+  border: 1px solid transparent;
+}
+.header__btn:hover {
+  background-color: transparent;
+  border: 1px solid #1aab7b;
+  color: #101010;
+  transition: 0.4s ease-in-out;
+}
+.help {
+  padding-top: 91px;
+  padding-bottom: 155px;
+}
+.help__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.help__textbox {
+  width: 537px;
+}
+.help__title {
+  color: #101010;
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 140%;
+}
+.help__text {
+  color: #636f87;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 150%;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+.cards {
+  background-color: #f2f4f6;
+  padding: 50px 0;
+}
+.card__title {
+  color: rgb(16, 16, 16);
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 140%;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.cards__list {
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+.cards__item {
+  width: 384px;
+  padding: 30px 40px;
+  box-sizing: border-box;
+  border: 2px solid #e1e7ed;
+  border-radius: 6px;
+  background-color: #f2f4f6;
+}
+.cards__item:hover {
+  background-color: #1aab7b;
+  transition: 0.3s ease-in-out;
+}
+
+.card__heading {
+  color: #101010;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 140%;
+  display: flex;
+  justify-content: space-between;
+}
+.card__heading::after {
+  background-image: url("./images/pen-tool.png");
+  width: 30px;
+  height: 30px;
+  content: "";
+  display: inline-block;
+}
+.cards__text {
+  color: rgb(99, 111, 135);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 150%;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+.cards__link {
+  color: #000000;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 140%;
+  text-decoration: none;
+}
+.cards__item:hover .card__heading,
+.cards__item:hover .cards__text ,
+.cards__item:hover .cards__link
+{
+  color: #f2f4f6;
+}
+.cards__item:hover .cards__link{
+  text-decoration: underline;
+}
+.bg{
+  padding-top: 65px;
+  padding-bottom: 51px;
+}
+.bg__textbox{
+  width: 650px;
+  text-align: center;
+  margin: 0 auto;
+}
+.bg__title{
+  color: #101010;
+  font-family: "Plus Jakarta Sans";
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 140%;
+}
+.bg__text{
+  color: rgb(99, 111, 135);
+  font-family: "Plus Jakarta Sans";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 150%;
+  margin-top: 16px;
+  margin-bottom: 60px;
+}
+.bg__img{
+  background-image: url("./images/bg.png");
+  padding-top: 45px;
+  padding-bottom: 36px;
+}
+.bg__form{
+  width: 565px;
+  background: rgba(0, 0, 0, 0.73);
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  padding-top: 37px;
+  padding-bottom: 58px;
+  padding-right: 29px;
+  padding-left: 72px;
+  margin: 0 auto;
+}
+.labels{
+  color: rgb(255, 255, 255);
+  font-family: "Plus Jakarta Sans";
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+input{
+  background-color: transparent;
+  border: none;
+  border-bottom: 3px solid rgb(255, 255, 255);
+  opacity: 0.2;
+  margin-bottom: 51px;
+  
+}
+.bg__btn{
+  width: 217px;
+  padding: 20px 0;
+  border-radius: 6px;
+  background-color: rgb(26, 171, 123);
+  color: rgb(255, 255, 255);
+  font-family: "Plus Jakarta Sans";
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 120%;
+  text-align: center;
+  margin: 0 auto;
+}
